@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this CSS to hide the scrollbar */
+body {
+  background-image: url("https://e7.pngegg.com/pngimages/94/856/png-clipart-gray-background-gray-decorative-pattern-thumbnail.png");
+  font-family: "Noto Serif Bengali", serif;
+}
+
+/* Existing styles */
+.bg-glass-cs {
+ /* From https://css.glass */
+background: rgba(255, 255, 255, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.7px);
+-webkit-backdrop-filter: blur(7.7px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hide scrollbar for Webkit browsers */
+::-webkit-scrollbar {
+  width: 0.5rem; /* You can adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make the thumb transparent */
+}
+
+/* Hide scrollbar for Firefox and non-Webkit browsers */
+body {
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem; /* You can adjust the width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make the thumb transparent */
+}
+
+
+/* Add these classes to your CSS file */
+.app {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-image 0.5s;
+}
+
+.morning {
+  background-image: url('https://i.ibb.co/6wdhVWd/Morning.webp');
+}
+
+.afternoon {
+  background-image: url('https://i.ibb.co/Ct0LrZ0/Afternoon.webp');
+}
+
+.evening {
+  background-image: url('https://i.ibb.co/yFwxKjB/Evening.webp');
+}
+
+.night {
+  background-image: url('https://i.ibb.co/z2d7H2g/Night.webp');
+}
